@@ -8,7 +8,6 @@ import java.io.*;
 import java.net.URL;
 import javax.swing.Timer;
 
-// Abstract class GameObject
 abstract class GameObject {
     protected int x, y, speed;
 
@@ -43,7 +42,7 @@ abstract class GameObject {
     }
 }
 
-// Stone class extends GameObject
+
 class Stone extends GameObject {
     public Stone(int x, int y, int speed) {
         super(x, y, speed);
@@ -53,7 +52,7 @@ class Stone extends GameObject {
 public class EnhancedFallingStoneGame extends JPanel implements ActionListener, KeyListener {
     private Timer timer;
     private int playerX = 250, playerY = 550;
-    private final int playerWidth = 40, playerHeight = 50;// final
+    private final int playerWidth = 40, playerHeight = 50;
     private int score = 0;
     private boolean gameOver = false;
     private boolean gameStarted = false;
